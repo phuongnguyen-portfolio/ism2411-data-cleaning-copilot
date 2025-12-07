@@ -49,4 +49,4 @@ if __name__ == "__main__":
     df_clean = remove_invalid_data(df_clean)
     df_clean.to_csv(cleaned_path, index=False)
     print("Cleaning complete. First few rows:")
-    print(df_clean)
+    print(df_clean.head())
