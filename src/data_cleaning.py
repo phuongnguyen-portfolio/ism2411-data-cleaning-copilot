@@ -40,8 +40,6 @@ def remove_invalid_data(df):
 if __name__ == "__main__":
     raw_path = "data/raw/sales_data_raw.csv"
     cleaned_path = "data/processed/sales_data_clean.csv"
-
-
     df_raw = load_data(raw_path)
     df_clean = standardize_column_names(df_raw)
     df_clean = clean_string_columns(df_clean)
